@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MusicPlayer</string>
+    <string name="one">Option_one</string>
+    <string name="two">two</string>
+    <string name="three">Option_three</string>
+    <string name="navImageBottomText">Music Player</string>>
 </resources>

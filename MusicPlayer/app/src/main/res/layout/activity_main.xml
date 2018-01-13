@@ -8,9 +8,37 @@
     tools:context="domain_name.example.com.musicplayer.MainActivity"
     android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
+    <android.support.v4.widget.DrawerLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_weight="1.0"
+                android:layout_height="wrap_content" />
+             <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView"
+                    android:textSize="40sp"/>
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+        </LinearLayout>
+        <android.support.design.widget.NavigationView
+            app:headerLayout="@layout/nav_header"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            app:menu="@menu/navigation_menu"
+            android:id="@+id/sideNaviigationMenu"
+            android:layout_gravity="start">
+        </android.support.design.widget.NavigationView>
+    </android.support.v4.widget.DrawerLayout>>
 </LinearLayout>
